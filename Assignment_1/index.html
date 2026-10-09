@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration and Result System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Registration & Result System</h1>
+
+        <form id="studentForm">
+            <h2>Student Details</h2>
+
+            <label for="name">Student Name</label>
+            <input type="text" id="name" placeholder="Enter student name">
+
+            <label for="rollNo">Roll Number</label>
+            <input type="text" id="rollNo" placeholder="Enter roll number">
+
+            <label for="course">Course</label>
+            <input type="text" id="course" placeholder="Enter course name">
+
+            <h2>Enter Marks</h2>
+
+            <label for="subject1">Physics</label>
+            <input type="number" id="subject1" min="0" max="100" placeholder="Marks out of 100">
+
+            <label for="subject2">Chemistry</label>
+            <input type="number" id="subject2" min="0" max="100" placeholder="Marks out of 100">
+
+            <label for="subject3">Mathematics</label>
+            <input type="number" id="subject3" min="0" max="100" placeholder="Marks out of 100">
+
+            <button type="submit">Calculate Result</button>
+        </form>
+
+        <div id="resultBox" class="result-box">
+            <h2>Student Result</h2>
+            <p><strong>Name:</strong> <span id="resultName"></span></p>
+            <p><strong>Roll Number:</strong> <span id="resultRoll"></span></p>
+            <p><strong>Course:</strong> <span id="resultCourse"></span></p>
+            <p><strong>Total Marks:</strong> <span id="resultTotal"></span></p>
+            <p><strong>Percentage:</strong> <span id="resultPercentage"></span></p>
+            <p><strong>Status:</strong> <span id="resultStatus"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
